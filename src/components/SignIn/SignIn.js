@@ -1,6 +1,7 @@
 import './SignIn.css'
 import React from 'react';
 import { BsGoogle } from 'react-icons/bs'
+import { Link } from 'react-router-dom';
 
 const SignIn = () => {
     return (
@@ -16,7 +17,8 @@ const SignIn = () => {
                     <br />
                     <input type="submit" value="Sign In" className='mt-3 btn btn-danger px-4 text-light' />
                 </form>
-                <button><BsGoogle/> Sign in with Google </button>
+                <button><BsGoogle /> Sign in with Google </button>
+                <Link to='/signup'>Create new account.</Link>
             </div>
         </div>
     );
