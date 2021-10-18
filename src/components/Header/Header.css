@@ -9,9 +9,11 @@
     margin-right: auto;
 }
 .wf-btn-primary{
-    border-radius: 20px;
+    border-radius: 40px;
     padding: .4em 1.5em .5em;
     background-color: #ed553b;
+    border: none;
+    color: white;
 }
 
 .wf-btn-secondary{

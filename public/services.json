@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Gym Membership",
+        "description": "You will get 24 hour access to our advance Gym.24 Hour Fitness can help you live a healthy and happy lifestyle. Give our spacious gyms a workout, experience our studio and cycle classes, and download our free 24GO® app for workout ideas to try when you come!",
+        "img": "https://i.ibb.co/kS462Lp/gym.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Full body exercise",
+        "description": "Work your upper body, lower body and core in one fell swoop with these beginner, intermediate and advanced exercises.It design to terget all your body part.To accomplish any fitness goals it is necessary to run through a variety of exercises as part of your gym routine – and not just because doing the same exercise over and over again would get boring after a while. However, if you are short on time and want moves that hit multiple muscle groups in one go, turn to these full-body exercises.",
+        "img": "https://i.ibb.co/KyDkZXb/full.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Flexibility Training",
+        "description": "'Flexibility and Mobility Training'. Possibly one of the most important types of fitness training is flexibility and mobility. Flexibility is the ability of your muscles to stretch. Mobility is being able to move your joints and tissues through their full range of motion, according to the American College of Sports Medicine.Both are important to athletic performance and for avoiding injury. Muscles and joints that are flexible and mobile — as well as strong — are much less susceptible to sprains and other injuries.Regularly working on flexibility and mobility will also help you age better. You'll be able to move more freely, do more of your favorite activities without pain or injury and you'll be able to stay independent longer.It's crucial to stretch and work on range of motion before and after each workout as part of your warm-up and cooldown. On days you're not strength training or doing aerobic exercise, try to devote more time to mobility and flexibility. Doing 30 minutes to an hour of these exercises is a great way to practice active recovery",
+        "img": "https://i.ibb.co/GJFBc78/flex.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Yoga",
+        "description": "A set of specific exercises, called poses, combined with specific breathing techniques and meditation principles are the building blocks of a yoga class. If a pose causes pain or proves too difficult, there are variations and modifications that can be made to help students. Props like blocks, blankets and straps — even chairs — can be used to help you get the most benefit from the poses. Yoga is not one-size-fits-all: The best yoga workout for you will depend on your individual needs and goals.",
+        "img": "https://i.ibb.co/vDRd1Jb/yoga.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Calistenic Trainning",
+        "description": "Whenever you're using your own body weight as resistance, you're doing calisthenics. Think push-ups, squats and mountain climbers. One of the biggest benefits of calisthenics is their convenience. You can do them anywhere without any fancy equipment.They're ideal for beginners because they help you learn movement patterns and build functional strength that's needed to graduate to using weights.In a 2017 study in ​Isokinetics and Exercise Science​, exercise newbies significantly improved their overall strength after just eight weeks of calisthenics training.But seasoned weightlifters can benefit from body-weight exercises, too, by incorporating more challenging variations into their routines or returning to the basics to warm up before heavier lifts",
+        "img": "https://i.ibb.co/Bs07Fnv/cali.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Parkur Trainning",
+        "description": "Parkour is a training discipline where practitioners (called traceurs) aim to get from one point to another in a complex environment, without assisting equipment and in the fastest and most efficient way possible. With roots in military obstacle course training and martial arts, parkour includes running, climbing, swinging, vaulting, jumping, plyometrics, rolling, and quadrupedal movement—whatever is suitable for the situation.Parkour is an activity that can be practiced alone or with others, and is usually carried out in urban spaces, though it can be done anywhere. It involves seeing one's environment in a new way, and envisioning the potential for navigating it by movement around, across, through, over and under its features.",
+        "img": "https://i.ibb.co/LPPLpQk/parkour.jpg"
+    }
+]
