@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from 'firebase/auth'
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from 'firebase/auth'
 import { useEffect, useState } from 'react';
 import initializeFirebase from '../Firebase/firebase.init'
 
@@ -14,11 +14,17 @@ const useFirebase = () => {
     const signInWithGoogle = () => {
         console.log('freom useFirebase')
         signInWithPopup(auth, googleProvider)
-            .then(result => console.log(result.user)) // no need to set user here, obserber will handle this
+            // no need to set user here, onAuthStateChanged will handle that
+            .then(result => console.log('user Loged in'))
             .catch(err => {
                 setError(err.message);
                 console.log('error from auth: ', error)
             })
+    }
+
+    const logOut = () => {
+        signOut(auth)
+            .then(() => setUser({}))
     }
 
     // special observer
@@ -37,7 +43,8 @@ const useFirebase = () => {
     return {
         user,
         error,
-        signInWithGoogle
+        signInWithGoogle,
+        logOut
     };
 
 }

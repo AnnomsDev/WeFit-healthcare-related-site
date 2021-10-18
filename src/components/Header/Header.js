@@ -2,8 +2,11 @@ import './Header.css';
 import logo from '../../img/log.svg';
 import { NavLink, Link } from 'react-router-dom';
 import React from 'react';
+import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
+    const { user, logOut } = useAuth();
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light Header">
             <div className="container-fluid">
@@ -21,16 +24,31 @@ const Header = () => {
                         <li className="nav-item">
                             <NavLink className="nav-link" aria-current="page" to='/rd'>Contact Us</NavLink>
                         </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" aria-current="page" to='/signin'><span className='wf-btn-secondary'>Sign In</span></NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" aria-current="page" to='/signup'><span className='wf-btn-primary'>Sign Up</span></NavLink>
-                        </li>
+
+                        {
+                            !user.uid ?
+                                <>
+                                    < li className="nav-item">
+                                        <NavLink className="nav-link" aria-current="page" to='/signin'><span className='wf-btn-secondary'>Sign In</span></NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link" aria-current="page" to='/signup'><span className='wf-btn-primary'>Sign Up</span></NavLink>
+                                    </li>
+                                </>
+                                :
+                                <>
+                                    <button className='wf-btn-secondary' onClick={() => logOut()}>Log Out</button>
+                                    <li className='nav-item text-light d-flex align-items-center ms-2'>
+                                        {user.email}
+                                    </li>
+                                </>
+
+                        }
+
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav >
     );
 };
 

@@ -10,17 +10,18 @@
 }
 .wf-btn-primary{
     border-radius: 40px;
-    padding: .4em 1.5em .5em;
+    padding: .25em 1.3em;
     background-color: #ed553b;
     border: none;
     color: white;
 }
 
 .wf-btn-secondary{
-    padding: .4em 1.5em .5em;
+    padding: .2em 1.3em ;
     border: 2px solid #ed553b;
     border-radius: 20px;
-
+    color: white;
+    background: none ;
 }
 .navbar-toggler-icon{
     color: white !important;
