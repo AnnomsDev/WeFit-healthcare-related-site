@@ -16,16 +16,16 @@ const Header = () => {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink className="nav-link" aria-current="page" to='/rd'>Home</NavLink>
+                            <NavLink className="nav-link" aria-current="page" to='/'>Home</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" aria-current="page" to='/rd'>Contact Us</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" aria-current="page" to='/rd'><span className='wf-btn-secondary'>Sign In</span></NavLink>
+                            <NavLink className="nav-link" aria-current="page" to='/signin'><span className='wf-btn-secondary'>Sign In</span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" aria-current="page" to='/rd'><span className='wf-btn-primary'>Sign Up</span></NavLink>
+                            <NavLink className="nav-link" aria-current="page" to='/signup'><span className='wf-btn-primary'>Sign Up</span></NavLink>
                         </li>
                     </ul>
                 </div>
