@@ -9,6 +9,8 @@ import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import PrivateRoute from './components/RrivateRoute/PrivateRoute';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
+import Gallary from './components/Gallary/Gallary';
+import AboutUs from './components/AboutUs/AboutUs';
 
 function App() {
   return (
@@ -21,6 +23,14 @@ function App() {
             <Route exact path='/'>
               <Home />
             </Route>
+            <PrivateRoute path='/gallary'>
+              <Gallary />
+            </PrivateRoute>
+            <PrivateRoute path='/about-us'>
+              <AboutUs />
+
+            </PrivateRoute>
+
             <Route path='/signin'>
               <SignIn />
             </Route>

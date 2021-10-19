@@ -1,0 +1,23 @@
+.Gallary{
+    text-align: center;
+    font-weight: 700;
+    margin: 3em 9vw;
+}
+.gallary-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    
+}
+.gallary-container img{
+    border-radius: 3px;
+    box-shadow: 0 0 10px 1px rgba(82, 82, 82, 0.164);
+
+}
+
+
+@media only screen and (max-width:980px) {
+    .gallary-container{
+        grid-template-columns: 1fr;
+    }
+}

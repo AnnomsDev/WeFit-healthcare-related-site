@@ -19,15 +19,20 @@ const useFirebase = () => {
 
     }
 
+    // sign up with email and password
     const signUpWithEmail = (email, password) => {
         setIsLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
 
     }
-    const signInWithEmail = (email, password) => {
+
+    // login with email and password
+    const signInWithEmail = (email, password)=>{
         setIsLoading(true)
-        return signInWithEmailAndPassword(auth, email, password)
+        return signInWithEmailAndPassword(auth, email, password);
     }
+
+    
 
     const logOut = () => {
         signOut(auth)

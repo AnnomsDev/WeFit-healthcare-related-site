@@ -26,3 +26,9 @@
 .navbar-toggler-icon{
     color: white !important;
 }
+
+@media only screen and (max-width:980px) {
+    .Header{
+        padding: 10px;
+    }
+}

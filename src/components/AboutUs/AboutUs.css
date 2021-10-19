@@ -1,0 +1,22 @@
+.About{
+    text-align: center;
+}
+.About h1{
+    margin: 3em;
+}
+.sections * {
+    margin: 2em;
+    
+}
+
+
+/* for large device */
+@media only screen and (min-width:1024px){
+    .About .sections{
+        display: flex;
+        align-items: center;
+    }
+    .sections img{
+        width: 40vw;
+    }
+}

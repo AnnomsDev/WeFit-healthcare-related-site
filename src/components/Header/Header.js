@@ -22,9 +22,11 @@ const Header = () => {
                             <NavLink className="nav-link" aria-current="page" to='/'>Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" aria-current="page" to='/rd'>Contact Us</NavLink>
+                            <NavLink className="nav-link" to='/gallary'>Exercise Gallary</NavLink>
                         </li>
-
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to='/about-us'>About Us</NavLink>
+                        </li>
                         {
                             !user.uid ?
                                 <>

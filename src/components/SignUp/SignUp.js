@@ -5,7 +5,7 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const SignUp = () => {
-    const { setError, setIsLoading, signInWithGoogle, signUpWithEmail } = useAuth();
+    const { error, setError, setIsLoading, signInWithGoogle, signUpWithEmail } = useAuth();
 
     const location = useLocation();
     const history = useHistory();
@@ -23,10 +23,17 @@ const SignUp = () => {
 
     const handleSignUpWithEmailPass = e => {
         e.preventDefault()
-        signUpWithEmail(email, pass)
-            .then(result => history.push(redirectURI))
-            .catch(err => setError(err))
-            .finally(() => setIsLoading(false))
+
+        if (pass.length >= 6) {
+            signUpWithEmail(email, pass)
+                .then(result => history.push(redirectURI))
+                .catch(err => setError(err))
+                .finally(() => setIsLoading(false))
+            setError('')
+        }
+        else {
+            setError('Password must be atleast 6 character long')
+        }
     }
 
 
@@ -37,12 +44,14 @@ const SignUp = () => {
             <div className='signin'>
                 <div className="signin-containner">
                     <h2>Sign Up</h2>
-                    <form onSubmit={() => handleSignUpWithEmailPass()}>
+                    <form onSubmit={handleSignUpWithEmailPass}>
                         <p>Email : </p>
                         <input type="email" onChange={e => setEmail(e.target.value)} placeholder='Enter your email' />
                         <br />
                         <p>Password : </p>
                         <input type="password" onChange={e => setPass(e.target.value)} placeholder='Enter password' />
+                        <br />
+                        <p>{error}</p>
                         <br />
                         <input type="submit" value="Sign Up" className='mt-3 btn btn-danger px-4 text-light' />
                     </form>
