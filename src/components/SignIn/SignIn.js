@@ -1,12 +1,24 @@
 import './SignIn.css'
 import React from 'react';
 import { BsGoogle } from 'react-icons/bs'
-import { Link } from 'react-router-dom';
-import useFirebase from '../../hooks/useFirebase';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const SignIn = () => {
-    const { user, signInWithGoogle } = useAuth();
+    const { setError, setIsLoading, signInWithGoogle } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+
+    const redirectURI = location.state?.from.pathname || '/'
+
+    const handleGoogleLogin = () => {
+        signInWithGoogle()
+            .then(result => history.push(redirectURI))
+            .catch(err => setError(err))
+            .finally(() => setIsLoading(false))
+    }
+
+
 
     return (
         <div className='signin'>
@@ -21,7 +33,7 @@ const SignIn = () => {
                     <br />
                     <input type="submit" value="Sign In" className='mt-3 btn btn-danger px-4 text-light' />
                 </form>
-                <button onClick={() => signInWithGoogle()}><BsGoogle /> Sign in with Google </button>
+                <button onClick={() => handleGoogleLogin()}><BsGoogle /> Sign in with Google </button>
                 <Link to='/signup'>Create new account.</Link>
             </div>
         </div>
