@@ -1,5 +1,5 @@
 import './SignIn.css'
-import React from 'react';
+import React, { useState } from 'react';
 import { BsGoogle } from 'react-icons/bs'
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
@@ -8,6 +8,9 @@ const SignIn = () => {
     const { setError, setIsLoading, signInWithGoogle } = useAuth();
     const location = useLocation();
     const history = useHistory();
+
+    const [email, setEmail] = useState('')
+    const [pass, setPass] = useState('')
 
     const redirectURI = location.state?.from.pathname || '/'
 
@@ -18,7 +21,9 @@ const SignIn = () => {
             .finally(() => setIsLoading(false))
     }
 
-
+    const handleSignUpWithEmailPass=()=>{
+        
+    }
 
     return (
         <div className='signin'>
