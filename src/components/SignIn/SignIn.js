@@ -29,7 +29,15 @@ const SignIn = () => {
                     setError('');
                     history.push(redirectURI);
                 })
-                .catch(err => setError(err.message))
+                .catch(err => {
+                    if (err.message === 'Firebase: Error (auth/user-not-found).') {
+                        setError("You don't have any account with this email.")
+                    }
+                    else {
+                        setError(err.message)
+                    }
+
+                })
                 .finally(() => setIsLoading(false))
 
         }
