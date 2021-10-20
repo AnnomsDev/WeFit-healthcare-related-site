@@ -1,5 +1,4 @@
 import './Header.css';
-import logo from '../../img/log.svg';
 import { NavLink, Link } from 'react-router-dom';
 import React from 'react';
 import useAuth from '../../hooks/useAuth';
@@ -41,7 +40,7 @@ const Header = () => {
                                 <>
                                     <button className='wf-btn-secondary' onClick={() => logOut()}>Log Out</button>
                                     <li className='nav-item text-light d-flex align-items-center ms-2'>
-                                        {user.email}
+                                        {user.displayName || user.email}
                                     </li>
                                 </>
 

@@ -1,17 +1,18 @@
-# WeFit : Be ready to focus your Fitness
-
+# WeFit
 **Live Site:  [WeFit](https://wefit-5db49.web.app) 
 
-## web technology used:
+**Description:**   [WeFit](https://wefit-5db49.web.app) is a fitness focused website. 
+
+### web technologies :
 * Bootstrap
 * React
 * Firebase
 
-## React Hoocks:
+**React Hoocks:**
 * react-router-dom
 * react-icons
 * react-simple-typewriter
 
-## screenshots:
+### screenshots:
 ![WeFit screenshot](./src/img/ss1.png)
 

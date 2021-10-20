@@ -25,10 +25,13 @@ const SignIn = () => {
         e.preventDefault();
         if (pass.length >= 6) {
             signInWithEmail(email, pass)
-                .then(result => history.push(redirectURI))
+                .then(result => {
+                    setError('');
+                    history.push(redirectURI);
+                })
                 .catch(err => setError(err.message))
                 .finally(() => setIsLoading(false))
-            setError('')
+
         }
         else {
             setError('Password must be atleast 6 character long')
