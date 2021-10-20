@@ -1,11 +1,11 @@
 # WeFit
-**Live Site:  [WeFit](https://wefit-5db49.web.app) 
+**Live Site:**  [WeFit](https://wefit-5db49.web.app) 
 
 **Description:**   [WeFit](https://wefit-5db49.web.app) is a fitness focused website. 
 
 ### web technologies :
-* Bootstrap
 * React
+* Bootstrap
 * Firebase
 
 **React Hoocks:**
