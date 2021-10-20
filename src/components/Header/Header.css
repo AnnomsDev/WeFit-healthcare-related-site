@@ -1,12 +1,25 @@
 .Header{
     background-color: #232D39 !important;
-    padding: 10px 60px;
+    padding: 10px 9vw;
+}
+.selected{
+    color: #ed553b;
+    font-weight: 700;
+
 }
 .Header a{
     color: white !important;
 }
 .Header .logo{
+    font-weight: 700;
     margin-right: auto;
+    font-size: 2em;
+}
+.Header .logo a{
+    font-size: 30px;
+}
+.Header .logo span{
+    color: #ed553b;
 }
 .wf-btn-primary{
     border-radius: 40px;
@@ -25,10 +38,4 @@
 }
 .navbar-toggler-icon{
     color: white !important;
-}
-
-@media only screen and (max-width:980px) {
-    .Header{
-        padding: 10px;
-    }
 }

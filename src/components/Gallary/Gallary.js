@@ -1,5 +1,6 @@
 import './Gallary.css'
 import React from 'react';
+import { BiDumbbell } from 'react-icons/bi'
 
 const gallaryImg = [
     'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
@@ -23,10 +24,10 @@ const gallaryImg = [
 const Gallary = () => {
     return (
         <div className='Gallary'>
-            <h2>Our Exercise Gallary</h2>
+            <h2>Our Exercise Gallary <br /> <span style={{ fontSize: '30px', color: "#80808069" }}><BiDumbbell /></span> </h2>
             <div className="gallary-container">
                 {
-                    gallaryImg.map(image => <div><img width="100%" src={image} alt="" /></div>)
+                    gallaryImg.map(image => <div><img width="100%" key={image} src={image} alt="" /></div>)
                 }
 
 

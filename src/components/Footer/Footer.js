@@ -1,6 +1,6 @@
 import './Footer.css'
 import React from 'react';
-import { BsFacebook, BsTwitter, BsGithub } from 'react-icons/bs'
+import { BsFacebook, BsGithub } from 'react-icons/bs'
 
 const Footer = () => {
     return (
@@ -8,8 +8,8 @@ const Footer = () => {
             <p>WeFit</p>
             <p>copyright © 2021 || All copyright reserved</p>
             <div className='secial-links'>
-                <a href="http://facebook.com/annoms.rd" target="_blank"> <BsFacebook />    </a>
-                <a href="http://github.com/annomsDev" target="_blank"> <BsGithub /> </a>
+                <a href="http://facebook.com/annoms.rd" target="_blank" rel="noreferrer" > <BsFacebook /> </a>
+                <a href="http://github.com/annomsDev" target="_blank" rel="noreferrer" > <BsGithub /></a>
 
 
             </div>

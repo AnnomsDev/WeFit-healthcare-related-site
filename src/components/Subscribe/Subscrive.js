@@ -5,8 +5,8 @@ const Subscrive = () => {
     return (
         <div className='Subscribe'>
             <div>
-                <h2>Subscrive to our mail service</h2>
-                <p>Subscribe to our mail section to get differents offer, and tips and Tricks. <br /> Stay connected with us</p>
+                <h2><span>Subscrive</span> to our mail service</h2>
+                <p>Subscribe to our mail section to get differents offer, and tips and Tricks. Stay connected with us</p>
             </div>
             <form>
                 <p>Email: </p>

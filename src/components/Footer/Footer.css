@@ -4,13 +4,11 @@
     color: white;
     padding: 1em;
 }
-.footer p{
+.Footer p{
     margin: 3px;
 }
-/* .footer .secial-links *{
-    margin: 10px;
-    font-size: 30px;
+.Footer a{
     text-decoration: none;
-
-} */
-    
+    font-size: 20px;
+    padding: 5px;
+}

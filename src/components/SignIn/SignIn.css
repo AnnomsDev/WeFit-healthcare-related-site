@@ -9,6 +9,7 @@
 
 }
 .signin-containner{
+    margin: 1em;
     padding: 2rem;
     border-radius: 7px;
     box-shadow: 0 0 10px 1px rgba(82, 82, 82, 0.164);

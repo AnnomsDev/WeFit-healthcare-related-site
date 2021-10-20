@@ -17,7 +17,7 @@ const SignIn = () => {
     const handleGoogleLogin = () => {
         signInWithGoogle()
             .then(result => history.push(redirectURI))
-            .catch(err => setError(err))
+            .catch(err => setError(err.message))
             .finally(() => setIsLoading(false))
     }
 
@@ -26,7 +26,7 @@ const SignIn = () => {
         if (pass.length >= 6) {
             signInWithEmail(email, pass)
                 .then(result => history.push(redirectURI))
-                .catch(err => setError(err))
+                .catch(err => setError(err.message))
                 .finally(() => setIsLoading(false))
             setError('')
         }

@@ -1,14 +1,19 @@
 .Contact{
     text-align:  center;
 }
+.Contact h2 span{
+    font-weight: 700;
+    border-bottom: 3px solid #ed553b;
+}
 .Contact div{
-    padding: 3em;
+    padding: 1em;
 }
 .Contact .icons{
-        padding-top: 0 ;
+    padding-top: 0 ;
 }
 .Contact .wf-icon{
     font-size: 50px;
+    color: rgb(45 45 45)
 }
 
 

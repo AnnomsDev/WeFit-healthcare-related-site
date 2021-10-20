@@ -11,10 +11,10 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light Header">
             <div className="container-fluid">
                 <span className='logo'>
-                    <Link className="navbar-brand" to='/'><img height='50px' src={logo} alt="" /> </Link>
+                    <Link className="navbar-brand" to='/'> We<span>Fit</span></Link>
                 </span>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon" ></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
