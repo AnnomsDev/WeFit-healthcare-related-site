@@ -3,6 +3,10 @@
 }
 .About h1{
     margin: 3em;
+    font-weight: 700;
+}
+.About h1 span{
+    border-bottom: 3px solid #ed553b;
 }
 .sections * {
     margin: 2em;
