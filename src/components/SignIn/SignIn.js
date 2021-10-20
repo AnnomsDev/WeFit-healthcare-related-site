@@ -41,10 +41,10 @@ const SignIn = () => {
                 <h2>Sign In</h2>
                 <form onSubmit={handleSignInWithEmailPass}>
                     <p>Email : </p>
-                    <input onChange={e => setEmail(e.target.value)} type="email" placeholder='Enter your email' />
+                    <input onChange={e => setEmail(e.target.value)} required type="email" placeholder='Enter your email' />
                     <br />
                     <p>Password : </p>
-                    <input onChange={e => setPass(e.target.value)} type="password" placeholder='Enter password' />
+                    <input onChange={e => setPass(e.target.value)} required type="password" placeholder='Enter password' />
                     <br />
                     <p>{error}</p>
                     <br />
